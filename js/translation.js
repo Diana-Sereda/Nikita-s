@@ -3,11 +3,18 @@ var arrLang = {
     'discount': 'Buy 2 and get 10% off',
     'collections': 'collections',
     'home': 'home',
+    'rus': 'en',
+    'eng': 'en',
+
   },
   'ru': {
     'discount': 'СКИДА 10% ПРИ ПОКУПКЕ 2 ТОВАРОВ',
     'collections': 'КОЛЛЕКЦИИ',
     'home': 'ГЛАВНАЯ',
+    'rus': 'ru',
+    'eng': 'en',
+
+
   }
 }
 
