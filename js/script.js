@@ -13,7 +13,6 @@ const invisic=document.querySelector('.invisic');
 const searchValue=document.getElementById('this-search');
 const result=document.querySelector('.search-result');
 
-
 icon.onclick=function(){
   search.classList.add('searching');
   toClose.classList.remove('invisic');
@@ -36,6 +35,7 @@ toClose.onclick=function(){
     body.style.overflow = "auto";
 }
 
+
 //Show Cover 
 
 const details = document.querySelector("details");
@@ -50,3 +50,17 @@ details.addEventListener("toggle", event => {
      body.style.overflow = "auto";
   }
 });
+
+// Close details
+const eng=document.getElementById('en');
+const summary = document.querySelector("summary");
+
+eng.onclick=function(){
+  document.getElementById('rus-img').src='img/icons/EN.svg';
+  document.getElementById('en-img').src='img/icons/RU.svg';
+  details.removeAttribute("open");
+}
+summary.onclick=function(){
+  document.getElementById('rus-img').src='img/icons/RU.svg';
+  document.getElementById('en-img').src='img/icons/EN.svg';
+}
