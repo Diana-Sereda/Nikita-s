@@ -1,6 +1,13 @@
 // Rellax effect 
 // var rellax = new Rellax('.rellax');
 
+//Проверь работает ли в реальности !!!!!
+//Remove rellax effect for mobile version 
+if($(window).width() <= 834){
+   $('.rellax').attr('data-rellax-speed', '0');
+}
+
+
 // Search 
 
 const body=document.querySelector('body');
@@ -23,7 +30,6 @@ icon.onclick=function(){
 search.classList.add('searching');
 toClose.classList.remove('invisic');
 cart.classList.toggle('invisic');
-// cover.style.display = "block";
 resultMobile.style.display = "block";
 body.style.overflow = "hidden";
   }else{
@@ -100,5 +106,12 @@ eng.onclick=function(){
 summary.onclick=function(){
   document.getElementById('rus-img').src='img/icons/RU.svg';
   document.getElementById('en-img').src='img/icons/EN.svg';
+}
+
+//connect button 
+
+const connect_btn=document.querySelector(".connect");
+connect_btn.onclick=function(){
+  connect_btn.innerHTML="8 905 950 60 31";
 }
 
