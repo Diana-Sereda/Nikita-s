@@ -160,7 +160,7 @@ details[open] p:hover {
 .nav-links:hover.nav-links::after {
   content: "";
   position: absolute;
-  display: none;
+  display: block;
   left: 0;
   bottom: 0;
   width: 166px;
